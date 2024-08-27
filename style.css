@@ -1,0 +1,95 @@
+:root {
+  --color1-dark: #aaa7b4;
+  --color2: #b8b8b6;
+  --color3: #cdcac9;
+  --color4: #dedddb;
+  --color5-light: #e8e9ee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 2rem;
+  background-color: var(--color5-light);
+}
+
+.board {
+  width: 40%;
+  margin: 1.2rem auto 1.5rem;
+  /* height: 75vh; */
+  /* border: 1px solid black; */
+  border-radius: 9px;
+  /* overflow: hidden; */
+  padding: 2rem;
+  color: black;
+  background-color: rgb(222, 221, 219, .2);
+}
+
+.pointer {
+  pointer-events: none;
+}
+
+.players {
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.players h3 {
+  font-weight: 500;
+}
+
+.players span {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* height: 28rem; */
+  gap: 1rem;
+}
+
+.zone {
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: center;
+  /* align-self: center; */
+  cursor: pointer;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.btn-div {
+  text-align: center;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.btn-div button {
+  padding: 1.4rem 3.2rem;
+  border: none;
+  color: black;
+  background-color: var(--color4);
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
